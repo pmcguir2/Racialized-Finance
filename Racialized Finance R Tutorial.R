@@ -25,9 +25,9 @@ library(haven)
 # website. It comes as a compressed Stata .dta file, but we can unzip it and 
 # read it into R for our analysis.
 
-download.file("https://www.federalreserve.gov/econres/files/scf2019s.zip", "pi19i6.zip" )
+download.file("https://www.federalreserve.gov/econres/files/scf2019s.zip", "p19i6.zip" )
 
-unz('pi1916.zip', 'pi1916.dta')
+unzip('p19i6.zip', 'p19i6.dta')
 
 data_2019 <- read_dta('p19i6.dta')
 
